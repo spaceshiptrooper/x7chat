@@ -1,0 +1,31 @@
+*******************************************************************************
+* 3.03.00a01                                                December 12, 2016 *
+*******************************************************************************
+- Replaced the old PasswordHash.php file with PHP's default
+password_hash & password_verify functions
+- Added onclick="return false;" to all href="#" links so that the page
+doesn't scroll up at the top every time a click is triggered
+- Added 'cost' to the config.php file
+- 'cost' is explained in README.txt
+- Added chat size to the chat & admin option (these options gives the chat the
+default boxed look or a 100% full width look)
+- Delete installation folder upon installation completion
+
+*******************************************************************************
+* 3.02.00a02                                                    March 2, 2013 *
+*******************************************************************************
+- Implemented a new installer with upgrade support (for 3.2.X)
+- Disabled error reporting by default
+- Added timestamp options
+- Added a user manager to the admin panel
+- Added customizable news to the home page
+- Added custom message styles
+- Added a word filter
+- Added notification sounds and messages for entering/leaving rooms
+- Fixed a bug with the handling of the online list
+- Fixed a bug with the initial loading of messages
+
+*******************************************************************************
+* 3.02.00a01                                                  January 9, 2013 *
+*******************************************************************************
+- Initial release

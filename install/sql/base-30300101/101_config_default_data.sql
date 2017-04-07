@@ -1,0 +1,2 @@
+INSERT INTO `{$prefix}config` (`version`, `title`, `theme`, `auto_join`, `use_smtp`, `smtp_host`, `smtp_user`, `smtp_port`, `smtp_pass`, `smtp_mode`, `from_address`, `allow_guests`) VALUES
+(30300101, 'Chat', 'default', 1, 0, '', '', 0, '', '', '', 1);
