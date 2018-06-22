@@ -20,16 +20,27 @@
 	$cur_stable = '';
 	$cur_unstable = '';
 	$news = array();
-	
+
 	$timeout = array('http' => array('timeout' => 3));
 	$context = stream_context_create($timeout);
 	$updates = @file_get_contents('http://www.x7chat.com/updates/v3.php', false, $context);
 	if($updates)
 	{
 		$updates = json_decode($updates);
-		$cur_stable = $updates->stable_release;
-		$cur_unstable = $updates->unstable_release;
-		$news = $updates->news;
+		if(!empty($updates)) {
+
+			$cur_stable = $updates->stable_release;
+			$cur_unstable = $updates->unstable_release;
+			$news = $updates->news;
+
+		} else {
+			$cur_stable = 'Could not fetch a stable release.';
+			$cur_unstable = 'Could not fetch an unstable release.';
+		}
+
+	} else {
+		$cur_stable = 'Could not fetch a stable release.';
+		$cur_unstable = 'Could not fetch an unstable release.';
 	}
 	
 	$x7->display('pages/admin/news', array(
