@@ -23,10 +23,22 @@
 		</tbody>
 	</table>
 	<h3><?php $lang('news'); ?></h3>
-	<?php foreach($news as $entry): ?>
+<?php
+if(isset($news) AND !empty($news)) {
+
+	foreach($news as $entry) {
+?>
 		<b><?php echo $entry->title; ?></b>
 		<p><i><?php echo $entry->date; ?></i></p>
 		<?php echo $entry->body; ?>
 		<hr />
-	<?php endforeach; ?>
+<?php
+	}
+
+} else {
+?>
+		<p>Could not fetch any news.</p>
+<?php
+}
+?>
 </div>
