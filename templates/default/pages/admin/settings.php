@@ -67,6 +67,24 @@
 		<input type="text" name="smtp_mode" id="smtp_mode" value="<?php $esc($config['smtp_mode']); ?>" />
 		<p><?php $lang('smtp_mode_instr'); ?></p>
 		
-		<input type="submit" value="<?php $lang('save_settings_button'); ?>" />
+		<input type="submit" id="submit" value="<?php $lang('save_settings_button'); ?>" />
 	</form>
 </div>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	$('#submit').on('click', function() {
+
+		var chat_size = $('#chat_size').val();
+		if(chat_size == 0) {
+			$('#page_wrapper').addClass('boxed');
+			$('#page_wrapper').removeClass('wide');
+		} else {
+			$('#page_wrapper').addClass('wide');
+			$('#page_wrapper').removeClass('boxed');
+		}
+
+	});
+
+});
+</script>
