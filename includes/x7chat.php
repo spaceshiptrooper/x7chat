@@ -19,8 +19,8 @@
 
 	class x7chat
 	{
-		const VERSION = '3.3.0a1';
-		const VERSION_ID = 30300101;
+		const VERSION = '3.3.0a2';
+		const VERSION_ID = 30300102;
 	
 		protected $strings;
 		protected $db;
@@ -78,7 +78,7 @@
 		{
 			$page = preg_replace("#^([a-z0-9_-]+)\?#i", '$1&', $page);
 			$host = $_SERVER['HTTP_HOST'];
-			$mode = ($_SERVER['SERVER_PORT'] == 443 ? 'https://' : 'http://');
+			$mode = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
 			$path = $_SERVER['REQUEST_URI'];
 			$url = parse_url($mode . $host . $path);
 			$req_url = $url['scheme'] . '://' . $url['host'] . $url['path'] . '?page=' . $page;
