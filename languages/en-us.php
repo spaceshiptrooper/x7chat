@@ -211,7 +211,7 @@
 		'admin_user_pass' => 'Leave blank if you do not wish to change this user\'s password.',
 		'user_updated' => 'User updated successfully.',
 		'chat_size' => 'Chat screen width',
-		'chat_size_instr' => 'If selected, the chat size will become either full width or boxed. (Need to refresh the chat for it to take effect)',
+		'chat_size_instr' => 'If selected, the chat size will become either full width or boxed.',
 		'' => '',
 		'' => '',
 		'' => '',
