@@ -7,7 +7,7 @@
 *                                                                             *
 *******************************************************************************
 *                                                                             *
-*                Version:           3.3.0a1                                   *
+*                Version:           3.3.0a2                                   *
 *                Release Date:      December 12, 2016                         *
 *                Author:            Tim Chamness                              *
 *                Copyright:         2003-2013 by Tim Chamness                 *
