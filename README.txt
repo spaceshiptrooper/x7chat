@@ -8,7 +8,7 @@
 *******************************************************************************
 *                                                                             *
 *                Version:           3.3.0a2                                   *
-*                Release Date:      December 12, 2016                         *
+*                Release Date:      June 22, 2018                             *
 *                Author:            Tim Chamness                              *
 *                Copyright:         2003-2013 by Tim Chamness                 *
 *                Website:           http://www.x7chat.com/                    *
