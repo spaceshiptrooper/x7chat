@@ -1,4 +1,15 @@
 *******************************************************************************
+* 3.03.00a02                                                    June 22, 2018 *
+*******************************************************************************
+- Added jQuery to detect which chat size is selected
+- Removed additional information in the languages for chat size since
+that additional information is not needed anymore
+- Added a few checkers to make sure that the x7chat website is still working
+- Added style height for the class .wide
+- Fixed the HTTP protocol mode in x7chat.php since this is the wrong way
+of doing it
+
+*******************************************************************************
 * 3.03.00a01                                                December 12, 2016 *
 *******************************************************************************
 - Replaced the old PasswordHash.php file with PHP's default
